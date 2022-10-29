@@ -1,6 +1,6 @@
 // categories
 var myHttp = new XMLHttpRequest;
-categMeals = []
+// categMeals = []
 mealsArr = []
 
 
@@ -9,13 +9,13 @@ mealsArr = []
 
 function displayCatMeals() {
     if (localStorage.getItem('category') != null) {
-        let meal = JSON.parse(localStorage.getItem('category'))
-        myHttp.open('GET', `https://www.themealdb.com/api/json/v1/1/filter.php?i=${meal}`);
+        let mealCat = JSON.parse(localStorage.getItem('category'))
+        myHttp.open('GET', `https://www.themealdb.com/api/json/v1/1/filter.php?c=${mealCat}`);
         myHttp.send();
         myHttp.addEventListener('readystatechange', function() {
             if (myHttp.readyState == 4) {
                 mealsArr = JSON.parse(myHttp.response).meals;
-                displays()
+                displayscategory()
 
             }
         })
@@ -25,7 +25,7 @@ function displayCatMeals() {
     }
 }
 
-function displays() {
+function displayscategory() {
     var cartona = ``;
 
     for (let i = 0; i < mealsArr.length; i++) {
