@@ -34,7 +34,7 @@
     let alertEmail = document.querySelector('.alert-email');
 
     function validationTwo() {
-        var regux = /^[a-zA-Z]{3,}[0-9]{0,}@(yahoo|gmail)\.com$/;
+               var regux = /^.{3,}@(yahoo|gmail)\.com$/;
 
         if (regux.test(inputEmail.value) == false) {
             alertEmail.classList.remove('d-none');
