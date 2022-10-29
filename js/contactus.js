@@ -3,7 +3,7 @@
     let alertName = document.querySelector('.alert-name');
 
     function validationOne() {
-        var regux = /^[a-z]{3,}( [a-z]{3,}){0,}$/;
+       var regux = /^[a-zA-Z]{3,}( [a-zA-Z]{3,}){0,}$/;
 
         if (regux.test(inputName.value) == false) {
             alertName.classList.remove('d-none');
