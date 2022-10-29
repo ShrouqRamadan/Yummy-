@@ -32,7 +32,7 @@ function displayCategory() {
 
                    <div>
                    <h2 class="ms-3 m ">${categMeals[i].strCategory}</h2>
-                   <p>${categMeals[i].strCategoryDescription.split(' ').splice(0,20).join(" ")}</p>
+                   <p>${categMeals[i].strCategoryDescription.split(' ').splice(0,10).join(" ")}</p>
                    </div>
 
                     </div>
