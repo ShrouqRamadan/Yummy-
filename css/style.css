@@ -127,6 +127,7 @@
                             border: 0;
                             box-shadow: 1px 1px 5px white;
                             border-bottom: 2px solid white;
+                          color: white!important;
                             /* box-shadow: 1px 1px 5px red!important; */
                             /* border-bottom: 2px solid red!important; */
                         }
